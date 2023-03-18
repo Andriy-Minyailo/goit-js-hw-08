@@ -45,5 +45,7 @@ function onSendForm(event) {
         console.log(formData);
         event.currentTarget.reset();
         localStorage.removeItem("feedback-form-state");
+        objectData.email = "";
+        objectData.message = "";
     }
 }
